@@ -68,7 +68,7 @@ loop do
     FileUtils.mkdir(groupdir) unless File.exist?(groupdir)
 
     count += 1
-    dirindex = format("%03d", count + offset)
+    dirindex = format("%d", count + offset)
     article_path = "#{groupdir}/#{dirindex}_#{title}"
     FileUtils.mkdir(article_path) unless File.exist?(article_path)
 
